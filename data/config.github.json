@@ -7,9 +7,7 @@
     "temperature": 0.3,
     "max_tokens": 8192,
     "throttle_sec": 1,
-    "languages": [
-      "zh"
-    ],
+    "languages": ["zh"],
     "analysis_concurrency": 5,
     "enrichment_concurrency": 5
   },
@@ -20,12 +18,6 @@
       "min_score": 150
     },
     "rss": [
-      {
-        "name": "Reuters Business",
-        "url": "https://www.reutersagency.com/feed/?best-topics=business-finance",
-        "enabled": true,
-        "category": "finance-global"
-      },
       {
         "name": "BBC World News",
         "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
@@ -40,32 +32,15 @@
       }
     ],
     "reddit": {
-      "enabled": true,
-      "subreddits": [
-        {
-          "subreddit": "stocks",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 30
-        },
-        {
-          "subreddit": "worldnews",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 50
-        }
-      ],
+      "enabled": false,
+      "subreddits": [],
       "users": [],
       "fetch_comments": 5
     }
-"filtering": {
+  },
+  "filtering": {
     "ai_score_threshold": 3.0,
     "time_window_hours": 24
-}
   },
   "webhook": {
     "enabled": true,
@@ -73,9 +48,7 @@
     "delivery": "summary",
     "platform": "generic",
     "layout": "markdown",
-    "languages": [
-      "zh"
-    ],
+    "languages": ["zh"],
     "request_body": {
       "content": "**#{message_title}**\n#{summary}"
     },
