@@ -63,7 +63,7 @@
       "fetch_comments": 5
     }
 "filtering": {
-    "ai_score_threshold": 5.0,
+    "ai_score_threshold": 3.0,
     "time_window_hours": 24
 }
   },
